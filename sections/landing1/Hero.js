@@ -3,6 +3,7 @@ import React from "react";
 import { Select } from "../../components/Core";
 import imgH from "../../assets/image/l1/png/hero-image-man.png";
 import imgP from "../../assets/image/patterns/hero-pattern.png";
+import Titre from "../../components/Atomes/Titre";
 
 const defaultCountries = [
   { value: "sp", label: "Singapore" },
@@ -31,7 +32,8 @@ const Hero = () => {
               data-aos-delay="500"
             >
               <h1 className="font-size-11 mb-12 pr-md-30 pr-lg-0">
-                My Name is Chris Hede
+               <Titre />
+               <Titre />
               </h1>
               <div className="">
                 {/* <!-- .search-form --> */}
