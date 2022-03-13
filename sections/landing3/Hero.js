@@ -2,8 +2,8 @@ import React from "react";
 import { Button } from "react-bootstrap";
 
 import { Select } from "../../components/Core";
-import imgC1 from "../../assets/image/l3/png/hero-image-1.png";
-import imgC2 from "../../assets/image/l3/png/hero-image-2.png";
+import imgC1 from "../../assets/image/accueil.png";
+import imgC2 from "../../assets/image/accueil.png";
 
 const defaultCountries = [
   { value: "sp", label: "Singapore" },
@@ -17,7 +17,7 @@ const Hero = () => {
   return (
     <>
       {/* <!-- Hero Area --> */}
-      <div className="position-relative z-index-1  mt-25 mt-md-15 mt-lg-0 mt-xl-22">
+      <div className="position-relative z-index-1 mt-lg-0 mt-xl-22" style={{marginTop:"0px !important",paddingTop:"5.9375rem !important",backgroundImage:"linear-gradient(to right, rgba(81, 122, 205, 0.1) 0%, rgba(81, 122, 205, 0.2) 100%);"}}>
         <div className="container">
           <div className="row position-relative align-items-center">
             <div
@@ -29,11 +29,11 @@ const Hero = () => {
               <div className="row">
                 <div className="col-md-8 col-sm-10">
                   <h1 className="font-size-11 mb-12">
-                    Get hired by the popular teams.
+                    Besoin d'un doc à editer
                   </h1>
                   <p className="font-size-6">
-                    Creating a beautiful job website is not easy always. To make
-                    your life easier, we are introducing Justcamp template.
+                    Des milliers d'entreprises postent leurs documents sur notre plateforme afin de vous permettre de gagner du temps
+                    dans le remplissage de ceux ci.
                   </p>
                 </div>
               </div>
@@ -73,7 +73,7 @@ const Hero = () => {
                       {/* <!-- ./select-city ends --> */}
                     </div>
                     <div className="button-block">
-                      <Button className="line-height-reset h-100 btn-submit w-100 text-uppercase">
+                      <Button className="line-height-reset h-100 btn-submit w-100 text-uppercase" style={{}}>
                         Search
                       </Button>
                     </div>
@@ -83,7 +83,7 @@ const Hero = () => {
             </div>
             <div className="col-12 pos-abs-tr z-index-n1 position-static position-lg-absolute ml-auto hero-image-positioning-2">
               <div className="image-group row justify-content-center">
-                <div className="col-sm-6 col-10 mt-10 mt-lg-0">
+                <div className="col-sm-6 col-10 mt-10 mt-lg-0 self-align-center">
                   <div
                     className="single-image"
                     data-aos="fade-left"
