@@ -26,7 +26,7 @@ const Content = () => {
                 <div className="pos-abs-br mb-10 ">
                   <div className="card bg-white shadow-2 border-0">
                     <div className="card-header bg-dodger-2 text-white text-center border-0">
-                      Applicants List
+                      Nos redacteurs
                     </div>
                     <div className="card-body mb-n5">
                       {/* <!-- media start --> */}
@@ -101,15 +101,14 @@ const Content = () => {
               <div className="content-2 pl-lg-10 pl-0 d-flex flex-column justify-content-center h-100 pt-lg-0 pt-11 pr-md-13 pr-xl-15 pr-xxl-25 pr-0">
                 {/* <!-- content-2 section title start --> */}
                 <p className="text-dodger font-size-4 font-weight-semibold mb-8">
-                  Looking for an expert for your company?
+                  Avez vous besoin d'un redacteur ?
                 </p>
                 <h2 className="font-size-9 mb-8">
-                  Get applications from the world best talents.
+                  Profitez de notre espace "Redacteur"
                 </h2>
                 <p className="text-default-color font-size-5 mb-12">
-                  Capitalize on low hanging fruit to identify a ballpark value
-                  added activity to beta test. Override the digital divide with
-                  additional clickthroughs from DevOps.
+                  EDDOCS met à votre dispositions des redacteurs en chef pour la redaction de vos differents documents, des données qui y 
+                  entrent ansi de leur gestion. 
                 </p>
                 {/* <!-- content-2 section title end --> */}
                 <Link href="/#">

@@ -2,6 +2,8 @@
 import Layout from "../components/Layout";
 import { GlobalProvider } from "../context/GlobalContext";
 
+import { ApolloProvider } from "@apollo/client";
+
 // import "../assets/fonts/fontawesome-5/webfonts/fa-brands-400.ttf";
 // import "../assets/fonts/fontawesome-5/webfonts/fa-regular-400.ttf";
 import "../assets/fonts/fontawesome-5/css/all.min.css";
@@ -17,6 +19,7 @@ import "../assets/fonts/fontawesome-5/css/all.css";
 
 import "../scss/bootstrap.scss";
 import "../scss/main.scss";
+import withData from "../lib/withData";
 
 import { ApolloProvider } from "@apollo/client";
 import withData from "../lib/withData";

@@ -18,7 +18,7 @@ const Categories = () => {
             <div className="col-12 col-lg-6">
               <div className="text-center text-lg-left mb-13 mb-lg-0">
                 <h2 className="font-size-9 font-weight-bold">
-                  Explore by category
+                  Familles de documents
                 </h2>
               </div>
             </div>
@@ -27,7 +27,7 @@ const Categories = () => {
               <div className="text-center text-lg-right">
                 <Link href="/#">
                   <a className="btn btn-outline-green text-uppercase">
-                    Explore All
+                    Explorez
                   </a>
                 </Link>
               </div>

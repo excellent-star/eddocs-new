@@ -1,15 +1,15 @@
 import React from "react";
 
 import { Select } from "../../components/Core";
-import imgH from "../../assets/image/l1/png/hero-image-man.png";
-import imgP from "../../assets/image/patterns/hero-pattern.png";
+import imgH from "../../assets/image/accueil.png";
+import imgP from "../../assets/image/accueil.png";
 
 const defaultCountries = [
-  { value: "sp", label: "Singapore" },
-  { value: "bd", label: "Bangladesh" },
-  { value: "usa", label: "United States of America" },
-  { value: "uae", label: "United Arab Emirates" },
-  { value: "pk", label: "Pakistan" },
+  { value: "sp", label: "Gabon" },
+  { value: "bd", label: "Congo" },
+  { value: "usa", label: "Cameroun" },
+  { value: "uae", label: "Cote d'ivoir" },
+  { value: "pk", label: "Tchad" },
 ];
 
 const Hero = () => {
@@ -31,7 +31,7 @@ const Hero = () => {
               data-aos-delay="500"
             >
               <h1 className="font-size-11 mb-12 pr-md-30 pr-lg-0">
-                Find the perfect job that you deserve.
+                Trouvez un document à editer
               </h1>
               <div className="">
                 {/* <!-- .search-form --> */}
@@ -43,7 +43,7 @@ const Hero = () => {
                           className="form-control focus-reset pl-13"
                           type="text"
                           id="keyword"
-                          placeholder="Job title"
+                          placeholder="Recherche doc"
                         />
                         <span className="h-100 w-px-50 pos-abs-tl d-flex align-items-center justify-content-center font-size-6">
                           <i className="icon icon-zoom-2 text-primary font-weight-bold"></i>
@@ -65,7 +65,7 @@ const Hero = () => {
                     </div>
                     {/* <!-- .Hero Button --> */}
                     <div className="button-block">
-                      <button className="btn btn-primary line-height-reset h-100 btn-submit w-100 text-uppercase">
+                      <button className="btn btn-primary line-height-reset h-100 btn-submit w-100 text-uppercase" style={{background: "#517acd",borderRadius:"0px !important"}}>
                         Search
                       </button>
                     </div>
@@ -74,8 +74,8 @@ const Hero = () => {
                 </form>
                 {/* <!-- ./search-form --> */}
                 <p className="heading-default-color font-size-3 pt-7">
-                  <span className="text-smoke">Search keywords e.g.</span>{" "}
-                  Product Designer
+                  <span className="text-smoke">Exemple.</span>{" "}
+                  Bulletin de Salaire
                 </p>
               </div>
             </div>
