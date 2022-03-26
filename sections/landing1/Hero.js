@@ -1,8 +1,10 @@
 import React from "react";
 
 import { Select } from "../../components/Core";
+
 import imgH from "../../assets/image/accueil.png";
 import imgP from "../../assets/image/accueil.png";
+
 
 const defaultCountries = [
   { value: "sp", label: "Gabon" },
@@ -31,7 +33,6 @@ const Hero = () => {
               data-aos-delay="500"
             >
               <h1 className="font-size-11 mb-12 pr-md-30 pr-lg-0">
-                Trouvez un document à editer
               </h1>
               <div className="">
                 {/* <!-- .search-form --> */}
