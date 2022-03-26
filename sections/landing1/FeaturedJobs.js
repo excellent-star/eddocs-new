@@ -18,7 +18,7 @@ const FeaturedJobs = () => {
             {/* <!-- Section Title --> */}
             <div className="col-12 col-xl-6 col-lg-6">
               <div className="text-center text-lg-left mb-13 mb-lg-0">
-                <h2 className="font-size-9 font-weight-bold">Featured Jobs</h2>
+                <h2 className="font-size-9 font-weight-bold">Les sociétés présentes</h2>
               </div>
             </div>
             {/* <!-- Section Button --> */}
@@ -26,7 +26,7 @@ const FeaturedJobs = () => {
               <div className="text-center text-lg-right">
                 <Link href="/#">
                   <a className="btn btn-outline-white text-uppercase">
-                    Explore All
+                    Explorez 
                   </a>
                 </Link>
               </div>

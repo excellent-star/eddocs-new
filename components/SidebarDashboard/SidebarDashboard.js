@@ -10,7 +10,7 @@ const Sidebar = () => {
   return (
     <>
       <Collapse in={gContext.showSidebarDashboard}>
-        <div className="dashboard-sidebar-wrapper pt-11" id="sidebar">
+        <div className="dashboard-sidebar-wrapper pt-11" id="sidebar" style={{overflowY: "scroll"}}>
           <div className="brand-logo px-11">
             <Link href="/">
               <a>
@@ -18,42 +18,84 @@ const Sidebar = () => {
               </a>
             </Link>
           </div>
-          <div className="my-15 px-11">
-            <Link href="/#">
+          <div className="my-5 mt-15 px-11">
+            <Link href="/dashboard-gestion-recolte">
               <a className="btn btn-primary btn-xl w-100 text-uppercase">
-                <span className="mr-5 d-inline-block">+</span>Post a new job
+                <span className="mr-5 d-inline-block">+</span>Gestion des recoltes
               </a>
             </Link>
           </div>
+          
           <ul className="list-unstyled dashboard-layout-sidebar">
             <li className="">
               <Link href="/dashboard-main">
                 <a className="px-10 py-1 my-5 font-size-4 font-weight-semibold flex-y-center">
-                  <i className="icon icon-layout-11 mr-7"></i>Dashboard
+                  <i className="icon icon-layout-11 mr-7"></i>Tableau de bord
+                </a>
+              </Link>
+            </li>
+            <hr className="mx-10"/>
+            <p className="mx-10">Contracteurs</p> 
+            <li className="">
+              <Link href="/dashboard-nouveau-contracteur">
+                <a className="px-10 py-1 my-5 font-size-4 font-weight-semibold flex-y-center">
+                  <i className="fas fa-briefcase mr-7"></i>Nouveau 
                 </a>
               </Link>
             </li>
             <li className="">
-              <Link href="/dashboard-jobs">
+              <Link href="/dashboard-gestion-contracteur">
                 <a className="px-10 py-1 my-5 font-size-4 font-weight-semibold flex-y-center">
-                  <i className="fas fa-briefcase mr-7"></i>Posted Jobs
+                  <i className="fas fa-briefcase mr-7"></i>Gestion
+                </a>
+              </Link>
+            </li>
+            <hr className="mx-10"/>
+            <p className="mx-10">Estates</p>
+            <li className="">
+              <Link href="/dashboard-nouveau-estate">
+                <a className="px-10 py-1 my-5 font-size-4 font-weight-semibold flex-y-center">
+                  <i className="fas fa-user mr-7"></i>Nouveau{" "}
                 </a>
               </Link>
             </li>
             <li className="">
-              <Link href="/dashboard-applicants">
+              <Link href="/dashboard-gestion-estate">
                 <a className="px-10 py-1 my-5 font-size-4 font-weight-semibold flex-y-center">
-                  <i className="fas fa-user mr-7"></i>Applicants{" "}
-                  <span className="ml-auto px-1 h-1 bg-dodger text-white font-size-3 rounded-5 max-height-px-18 flex-all-center">
-                    14
-                  </span>
+                  <i className="fas fa-user mr-7"></i>Gestion{" "}
+                </a>
+              </Link>
+            </li>
+            <hr className="mx-10"/>
+            <p className="mx-10">Blocks</p>
+            <li className="">
+              <Link href="/dashboard-nouveau-block">
+                <a className="px-10 py-1 my-5 font-size-4 font-weight-semibold flex-y-center">
+                  <i className="fas fa-user mr-7"></i>Nouveau{" "}
                 </a>
               </Link>
             </li>
             <li className="">
-              <Link href="/dashboard-settings">
+              <Link href="/dashboard-gestion-block">
                 <a className="px-10 py-1 my-5 font-size-4 font-weight-semibold flex-y-center">
-                  <i className="fas fa-cog mr-7"></i>Settings
+                  <i className="fas fa-user mr-7"></i>Gestion{" "}
+                  
+                </a>
+              </Link>
+            </li>
+            <hr className="mx-10"/>
+            <p className="mx-10">Recolteurs</p>
+            <li className="">
+              <Link href="/dashboard-nouveau-recolteur">
+                <a className="px-10 py-1 my-5 font-size-4 font-weight-semibold flex-y-center">
+                  <i className="fas fa-user mr-7"></i>Nouveau{" "}
+                </a>
+              </Link>
+            </li>
+            <li className="">
+              <Link href="/dashboard-gestion-recolteur">
+                <a className="px-10 py-1 my-5 font-size-4 font-weight-semibold flex-y-center">
+                  <i className="fas fa-user mr-7"></i>Gestion{" "}
                 </a>
               </Link>
             </li>

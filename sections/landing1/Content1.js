@@ -35,7 +35,7 @@ const Content = () => {
                   </span>
                   {/* <!-- check-mark end --> */}
                   <p className="text-black-2 text-4 font-weight-bold mb-7">
-                    <span className="font-weight-normal">Found</span> 290+ Jobs
+                    <span className="font-weight-normal">Plus de </span> 150 milles documents
                   </p>
                   <div className="d-flex">
                     <ul className="list-unstyled list-overlapped-icon max-width-130px">
@@ -66,7 +66,7 @@ const Content = () => {
                       </li>
                     </ul>
                     <p className="text-space-black font-size-4 mt-1">
-                      +14 Giants
+                      avec plus de 32 geants 
                     </p>
                   </div>
                 </div>
@@ -83,26 +83,26 @@ const Content = () => {
               <div className="pl-lg-10 pl-0 d-flex flex-column justify-content-center h-100 pt-lg-0 pt-15 pr-md-13 pr-xl-15 pr-xxl-25 pr-0 ">
                 {/* <!-- content-1 section-title start --> */}
                 <h2 className="font-size-9 mb-8 pr-xxl-15">
-                  Help you to get the best job that fits you
+                  Traitement des données 
                 </h2>
                 <p className="text-gray font-size-5 mb-10 mb-lg-16">
-                  Leverage agile frameworks to provide a robust synopsis for
-                  high level overviews. Iterative approach
+                  Profitez de nos meilleurs connecteurs aux sources de donnees pour le traitement de vos données et l'edition de vos documents.
+                  Gagnez plus de temps .
                 </p>
                 {/* <!-- content-1 section-title end --> */}
                 {/* <!-- content-1 list-group start --> */}
                 <ul className="list-unstyled pl-0">
                   <li className="font-weight-semibold border-0 d-flex mb-7 heading-default-color">
                     <i className="fas fa-check font-size-4 text-green mr-6"></i>
-                    Bring to the table win-win survival
+                    Microsoft excel
                   </li>
                   <li className="font-weight-semibold border-0 d-flex mb-7 heading-default-color">
                     <i className="fas fa-check font-size-4 text-green mr-6"></i>
-                    Capitalize on low hanging fruit to identify
+                      Sql Server
                   </li>
                   <li className="font-weight-semibold border-0 d-flex mb-7 heading-default-color">
                     <i className="fas fa-check font-size-4 text-green mr-6"></i>
-                    But I must explain to you how all this
+                    MySQL
                   </li>
                 </ul>
                 {/* <!-- content-1 list-group end --> */}

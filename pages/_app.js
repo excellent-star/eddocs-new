@@ -2,6 +2,8 @@
 import Layout from "../components/Layout";
 import { GlobalProvider } from "../context/GlobalContext";
 
+import { ApolloProvider } from "@apollo/client";
+
 // import "../assets/fonts/fontawesome-5/webfonts/fa-brands-400.ttf";
 // import "../assets/fonts/fontawesome-5/webfonts/fa-regular-400.ttf";
 import "../assets/fonts/fontawesome-5/css/all.min.css";
@@ -17,34 +19,63 @@ import "../assets/fonts/fontawesome-5/css/all.css";
 
 import "../scss/bootstrap.scss";
 import "../scss/main.scss";
+import withData from "../lib/withData";
 
-const MyApp = ({ Component, pageProps, router }) => {
-  if (router.pathname.match(/404/)) {
+import { ApolloProvider } from "@apollo/client";
+import withData from "../lib/withData";
+
+const MyApp = ({ Component, pageProps, router,apollo }) => {
+  console.log(apollo)
+  if (router?.pathname.match(/404/)) {
     return (
-      <GlobalProvider>
-        <Layout pageContext={{ layout: "bare" }}>
-          <Component {...pageProps} />
-        </Layout>
-      </GlobalProvider>
+      <ApolloProvider client={apollo}>
+        <GlobalProvider>
+          <Layout pageContext={{ layout: "bare" }}>
+            <Component {...pageProps} />
+          </Layout>
+        </GlobalProvider>
+      </ApolloProvider>
     );
   }
-  if (router.pathname.match(/dashboard/)) {
+  if (router?.pathname.match(/dashboard/)) {
     return (
-      <GlobalProvider>
-        <Layout pageContext={{ layout: "dashboard" }}>
-          <Component {...pageProps} />
-        </Layout>
-      </GlobalProvider>
+      <ApolloProvider client={apollo}>
+        <GlobalProvider>
+          <Layout pageContext={{ layout: "dashboard" }}>
+            <Component {...pageProps} />
+          </Layout>
+        </GlobalProvider>
+      </ApolloProvider>
     );
   }
 
   return (
-    <GlobalProvider>
-      <Layout pageContext={{}}>
-        <Component {...pageProps} />
-      </Layout>
-    </GlobalProvider>
+    <ApolloProvider client={apollo}>
+      {/* <GlobalProvider>
+        <Layout pageContext={{}}>
+          <Component {...pageProps} />
+        </Layout>
+      </GlobalProvider> */}
+
+        <GlobalProvider>
+          <Layout pageContext={{ layout: "dashboard" }}>
+            <Component {...pageProps} />
+          </Layout>
+        </GlobalProvider>
+    </ApolloProvider>
   );
 };
 
-export default MyApp;
+MyApp.getInitialProps=async function ({Component,ctx}){
+ 
+  let pageProps={};
+  if(Component.getInitialProps){
+    pageProps=await Component.getInitialProps(ctx);
+  }
+
+  pageProps.query=ctx.query;
+
+  return {pageProps};
+
+}
+export default withData(MyApp);

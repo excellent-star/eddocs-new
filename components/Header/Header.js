@@ -13,6 +13,7 @@ import Logo from "../Logo";
 import { menuItems } from "./menuItems";
 
 import imgP from "../../assets/image/header-profile.png";
+import StyleDuBouton from "./style";
 
 const SiteHeader = styled.header`
   .dropdown-toggle::after {
@@ -324,17 +325,17 @@ const Header = () => {
                     gContext.toggleSignInModal();
                   }}
                 >
-                  Log In
+                 Connexion
                 </a>
-                <a
-                  className={`btn btn-${gContext.header.variant} text-uppercase font-size-3`}
+                <a style={StyleDuBouton}
+                  className={`btn btn-primary text-uppercase font-size-3`}
                   href="/#"
                   onClick={(e) => {
                     e.preventDefault();
                     gContext.toggleSignUpModal();
                   }}
                 >
-                  Sign Up
+                  Inscription
                 </a>
               </div>
             )}
