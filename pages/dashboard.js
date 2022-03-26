@@ -7,21 +7,7 @@ import * as XLSX from "xlsx";
 import { useQuery } from '@apollo/client';
 import gql from 'graphql-tag';
 
-const LISTE_CLIENT=gql`
-query 
- { 
-   clients
-   { 
-     id
-     name
-     firstname
-     pays
-     telephone
-     Ville
-
-   }
- }
-`;
+import { LISTE_DOCUMENTS } from "../lib/graphql";
 
 const defaultJobs = [
   { value: "pd", label: "Product Designer" },
@@ -49,7 +35,7 @@ export default function Dashboard () {
   };
 
 
-  const {data,error,loading}=useQuery(LISTE_CLIENT);
+  const {data,error,loading}=useQuery(LISTE_DOCUMENTS);
 
   console.log(data)
 
