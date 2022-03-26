@@ -21,6 +21,9 @@ import "../scss/bootstrap.scss";
 import "../scss/main.scss";
 import withData from "../lib/withData";
 
+import { ApolloProvider } from "@apollo/client";
+import withData from "../lib/withData";
+
 const MyApp = ({ Component, pageProps, router,apollo }) => {
   console.log(apollo)
   if (router?.pathname.match(/404/)) {
@@ -48,11 +51,17 @@ const MyApp = ({ Component, pageProps, router,apollo }) => {
 
   return (
     <ApolloProvider client={apollo}>
-      <GlobalProvider>
+      {/* <GlobalProvider>
         <Layout pageContext={{}}>
           <Component {...pageProps} />
         </Layout>
-      </GlobalProvider>
+      </GlobalProvider> */}
+
+        <GlobalProvider>
+          <Layout pageContext={{ layout: "dashboard" }}>
+            <Component {...pageProps} />
+          </Layout>
+        </GlobalProvider>
     </ApolloProvider>
   );
 };
